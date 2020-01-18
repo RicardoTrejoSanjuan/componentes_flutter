@@ -10,7 +10,8 @@ class CardPage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(10.0),
         children: <Widget>[
-          _cardTipo1()
+          _cardTipo1(),
+          _cardTipo2(),
         ],
       ),
     );
@@ -38,6 +39,21 @@ class CardPage extends StatelessWidget {
               )
             ],
           )
+        ],
+      ),
+    );
+  }
+
+  Widget _cardTipo2() {
+    return Card(
+      child: Column(
+        children: <Widget>[
+          Image(
+            image: NetworkImage('http://getwallpapers.com/wallpaper/full/d/7/3/420723.jpg'),
+          ),
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Text('Ace, Sabo y Luffy'))
         ],
       ),
     );
