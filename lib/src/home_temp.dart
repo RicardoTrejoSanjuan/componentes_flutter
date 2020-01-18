@@ -8,9 +8,22 @@ class HomePageTemp extends StatelessWidget {
       appBar: AppBar(
         title: Text('Componentes Temp'),
       ),
-      body: Center(
-        child: Text('Hola'),
-      )
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text('data'),
+          ),
+          Divider(),
+          ListTile(
+            title: Text('data'),
+          ),
+          Divider(),
+          ListTile(
+            title: Text('data'),
+          ),
+          Divider(),
+        ],
+      ),
     );
   }
 }
