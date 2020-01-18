@@ -48,9 +48,16 @@ class CardPage extends StatelessWidget {
     return Card(
       child: Column(
         children: <Widget>[
-          Image(
+          FadeInImage(
             image: NetworkImage('http://getwallpapers.com/wallpaper/full/d/7/3/420723.jpg'),
+            placeholder: AssetImage('assets/jar-loading.gif'),
+            fadeInDuration: Duration(milliseconds: 200),
+            height: 250.0,
+            fit: BoxFit.cover
           ),
+          // Image(
+          //   image: NetworkImage('http://getwallpapers.com/wallpaper/full/d/7/3/420723.jpg'),
+          // ),
           Container(
             padding: EdgeInsets.all(10.0),
             child: Text('Ace, Sabo y Luffy'))
