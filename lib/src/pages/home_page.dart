@@ -1,4 +1,3 @@
-import 'package:componentes_flutter/src/pages/alert_page.dart';
 import 'package:flutter/material.dart';
 import 'package:componentes_flutter/src/utils/icon_string_util.dart';
 import 'package:componentes_flutter/src/pages/providers/menu_provider.dart';
@@ -33,8 +32,8 @@ class HomePages extends StatelessWidget {
       initialData: [],
       builder: (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot) {
 
-        print('builder');
-        print(snapshot.data);
+        // print('builder');
+        // print(snapshot.data);
         return ListView(
           children: _listaItems(snapshot.data, context),
         );
