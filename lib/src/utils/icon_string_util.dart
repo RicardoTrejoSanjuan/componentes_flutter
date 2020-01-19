@@ -7,6 +7,7 @@ final _icons = <String, IconData>{
   'animation'     : Icons.android,
   'input'         : Icons.input,
   'slider'        : Icons.slideshow,
+  'list'          : Icons.list,
 };
 
 Icon getIcon(String nombreIcono) {
