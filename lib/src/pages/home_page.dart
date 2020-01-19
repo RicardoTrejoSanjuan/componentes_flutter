@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:componentes_flutter/src/utils/icon_string_util.dart';
-import 'package:componentes_flutter/src/pages/providers/menu_provider.dart';
+import 'package:componentes_flutter/src/providers/menu_provider.dart';
 
 class HomePages extends StatelessWidget {
 
