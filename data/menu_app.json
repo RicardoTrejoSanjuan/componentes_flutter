@@ -20,10 +20,16 @@
             "ruta": "animation",
             "icon": "animation",
             "texto": "Animation"
-        },{
+        },
+        {
             "ruta": "inputs",
             "icon": "input",
             "texto": "inputs"
+        },
+        {
+            "ruta": "slider",
+            "icon": "slider",
+            "texto": "slider"
         }
     ]
 }

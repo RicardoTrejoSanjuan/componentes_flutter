@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 final _icons = <String, IconData>{
-  'add_alert' : Icons.add_alert,
+  'add_alert'     : Icons.add_alert,
   'accessibility' : Icons.accessibility,
-  'folder_open': Icons.folder_open,
-  'animation': Icons.android,
-  'input': Icons.input,
+  'folder_open'   : Icons.folder_open,
+  'animation'     : Icons.android,
+  'input'         : Icons.input,
+  'slider'        : Icons.slideshow,
 };
 
 Icon getIcon(String nombreIcono) {
