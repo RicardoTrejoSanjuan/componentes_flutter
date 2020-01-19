@@ -11,6 +11,9 @@ class _InputPageState extends State<InputPage> {
   String _email = '';
   String _password = '';
   String _fecha = '';
+  String _opcionSeleccionada = 'Caminar';
+
+  List<String> _verbos = ['Correr', 'Caminar', 'Volar', 'Nadar', 'Conducir'];
 
   TextEditingController _inputFielDateControlles = new TextEditingController();
 
@@ -68,6 +71,7 @@ class _InputPageState extends State<InputPage> {
     return ListTile(
       title: Text('El nombre es $_nombre'),
       subtitle: Text('Email: $_email'),
+      trailing: Text(_opcionSeleccionada),
     );
   }
 
@@ -124,6 +128,7 @@ class _InputPageState extends State<InputPage> {
       initialDate: new DateTime.now(),
       firstDate: new DateTime(2019),
       lastDate: new DateTime(2022),
+      locale: Locale('es', 'ES')
     );
 
     if (picked != null) {
