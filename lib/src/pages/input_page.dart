@@ -37,6 +37,8 @@ class _InputPageState extends State<InputPage> {
           Divider(),
           _crearFecha(context),
           Divider(),
+          _crearDropDown(),
+          Divider(),
           _crearPersona(),
         ],
       ),
@@ -137,5 +139,38 @@ class _InputPageState extends State<InputPage> {
         _inputFielDateControlles.text = _fecha;
       });
     }
+  }
+
+  List<DropdownMenuItem<String>> getOpcionesDropDown() {
+    List<DropdownMenuItem<String>> lista = new List();
+
+    _verbos.forEach((item) {
+      lista.add(DropdownMenuItem(
+        child: Text(item),
+        value: item,
+      ));
+    });
+
+    return lista;
+  }
+
+  Widget _crearDropDown() {
+    return Row(
+      children: <Widget>[
+        Icon(Icons.supervisor_account),
+        SizedBox(width: 30.0),
+        Expanded(
+          child: DropdownButton(
+            value: _opcionSeleccionada,
+            items: getOpcionesDropDown(),
+            onChanged: (opt) {
+              setState(() {
+                _opcionSeleccionada= opt;
+              });
+            },
+          ),
+        ),
+      ],
+    );
   }
 }
