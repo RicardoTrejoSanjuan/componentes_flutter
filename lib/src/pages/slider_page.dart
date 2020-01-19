@@ -22,6 +22,7 @@ class _SliderPageState extends State<SliderPage> {
           children: <Widget>[
             _crearSlider(),
             _checkBox(),
+            _crearSwitches(),
             Expanded(
               child: _crearImagen()
             ),
@@ -48,7 +49,30 @@ class _SliderPageState extends State<SliderPage> {
   }
 
   Widget _checkBox() {
-    return Checkbox(
+    return CheckboxListTile(
+      title: Text('Bloquear Slider'),
+      value: _bloquearCheck,
+      onChanged: (valor) {
+        setState(() {
+          _bloquearCheck = valor;
+        });
+      },
+    );
+    
+    // =====  Checkbox Basico  =======
+    // return Checkbox(
+    //   value: _bloquearCheck,
+    //   onChanged: (valor) {
+    //     setState(() {
+    //       _bloquearCheck = valor;
+    //     });
+    //   },
+    // );
+  }
+
+  Widget _crearSwitches() {
+    return SwitchListTile(
+      title: Text('Bloquear Slider'),
       value: _bloquearCheck,
       onChanged: (valor) {
         setState(() {
@@ -65,4 +89,5 @@ class _SliderPageState extends State<SliderPage> {
       fit: BoxFit.contain,
     );
   }
+
 }
