@@ -1,5 +1,26 @@
 # componentes_flutter
 
+Componente usados en este proyecto
+
+- Listviews
+- ListTiles
+- Listas y map
+- Rutas
+- Json hacia mapas
+- Future Builder
+- Lectura de archivos JSON
+- Iconos
+- Imágenes
+- Avatars
+- Loadings
+- InfiniteScroll
+- Pull to refresh
+- Cards
+- Sliders
+- Y mucho más
+
+Mi objetivo con este proyecto es comprender cómo se usa la documentación de Flutter y crear una aplicación que use muchos componentes
+
 A new Flutter project.
 
 ## Getting Started
